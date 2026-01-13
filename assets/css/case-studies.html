@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Case Studies — Israel Ogundipe</title>
+  <meta name="description" content="Selected performance engineering case studies." />
+
+  <link rel="preload" href="assets/css/styles.css" as="style">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <main class="container">
+    <header class="page-header">
+      <h1>Case Studies</h1>
+      <a href="index.html" class="back-link">← Home</a>
+    </header>
+
+    <!-- Case Study 1 -->
+    <section class="case-study">
+      <h2>The Weather Digital</h2>
+      <p class="meta">Role: Technical Consultant</p>
+
+      <h3>Problem</h3>
+      <ul>
+        <li>Mobile PageSpeed score in the low 30s</li>
+        <li>Poor INP due to heavy frontend scripts</li>
+        <li>Hero media blocking LCP</li>
+      </ul>
+
+      <h3>Diagnosis</h3>
+      <ul>
+        <li>Excessive third-party scripts</li>
+        <li>Render-blocking hero assets</li>
+        <li>Unoptimized asset delivery path</li>
+      </ul>
+
+      <h3>Solution</h3>
+      <ul>
+        <li>Proposed Cloudflare R2 media decoupling</li>
+        <li>Reduced render-blocking assets above the fold</li>
+        <li>Optimized script execution order</li>
+      </ul>
+
+      <h3>Impact</h3>
+      <ul>
+        <li>Projected <strong>1.2s LCP reduction</strong></li>
+        <li>Significant INP improvement roadmap</li>
+      </ul>
+
+      <div class="screenshots">
+        <img src="assets/images/weather-digital-before.png" alt="Before performance audit">
+        <img src="assets/images/weather-digital-after.png" alt="After optimization plan">
+      </div>
+    </section>
+
+    <!-- Case Study 2 -->
+    <section class="case-study">
+      <h2>ElimuVillage</h2>
+      <p class="meta">Role: Lead Developer</p>
+
+      <h3>Problem</h3>
+      <ul>
+        <li>Multiple YouTube embeds causing heavy script bloat</li>
+        <li>Unstable layout shifts (CLS)</li>
+        <li>Slow mobile experience</li>
+      </ul>
+
+      <h3>Diagnosis</h3>
+      <ul>
+        <li>Third-party embed overhead</li>
+        <li>Unoptimized media loading strategy</li>
+      </ul>
+
+      <h3>Solution</h3>
+      <ul>
+        <li>Replaced YouTube embeds with lightweight alternatives</li>
+        <li>Self-hosted media via Cloudflare R2</li>
+        <li>Improved loading strategy for above-the-fold assets</li>
+      </ul>
+
+      <h3>Impact</h3>
+      <ul>
+        <li><strong>11% immediate performance improvement</strong></li>
+        <li>CLS stabilized across mobile and desktop</li>
+      </ul>
+
+      <div class="screenshots">
+        <img src="assets/images/elimu-before.png" alt="Before optimization">
+        <img src="assets/images/elimu-after.png" alt="After optimization">
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        <a href="mailto:ogundipeisrae04@gmail.com">ogundipeisrae04@gmail.com</a> ·
+        <a href="https://www.linkedin.com/in/israel-ogundipe-278363203/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
